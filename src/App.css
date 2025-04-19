@@ -1,0 +1,87 @@
+/* Ensure no default margins, padding for body and main elements */
+body, main {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Flex utilities for layout */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styles */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Button styles */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+input {
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+/* Ensure body is full-screen */
+body {
+  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* No borders and shadow for header and footer */
+header, footer {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+header {
+  background-color: #34495e;
+  color: #fff;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #61dafb;
+}
